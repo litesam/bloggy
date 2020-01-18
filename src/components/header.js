@@ -1,24 +1,18 @@
 import React, { useContext } from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import Toggle from 'react-toggle';
 import { ThemeContext } from 'styled-components';
 
 import headerStyles from './header.module.css';
 import './toggle.css';
 
-const Header = ({ handleThemeSwitching, isLight }) => {
+const Header = ({ handleThemeSwitching, isLight, title }) => {
 
   const themeContext = useContext(ThemeContext);
 
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  if (!title) {
+    title = 'Portfolio';
+  }
 
   return (
     <header className={headerStyles.header}>
@@ -75,7 +69,7 @@ const Header = ({ handleThemeSwitching, isLight }) => {
             color: themeContext.text
           }}
         >
-          {data.site.siteMetadata.title}
+          {title}
         </Link>
       </h1>
     </header>

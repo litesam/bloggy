@@ -17,6 +17,7 @@
 
 .post a:hover {
   background-color: #e4e4e4;
+  color: rgb(124, 55, 173);
 }
 
 .post h2 {

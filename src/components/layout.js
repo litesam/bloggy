@@ -12,20 +12,23 @@ const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text}
   }
+  a {
+    text-decoration: none;
+    color: rgba(190, 190, 193, 0.8);
+  }
+  a:hover {
+    color: rgba(190, 190, 193, 1);
+  }
 `;
 
 class Layout extends React.Component {
   constructor(props) {
     super(props);
-    // const [isLight, setLight] = useState('light');
-    // window.localStorage.setItem('theme', isLight);
     this.handleThemeSwitching = this.handleThemeSwitching.bind(this);
     this.state = {
       theme: !window.localStorage.getItem('theme') ? 'light' : window.localStorage.getItem('theme')
     };
   }
-  
-  // componentDid
 
   handleThemeSwitching() {
     if (this.state.theme === 'light') {
@@ -47,6 +50,7 @@ class Layout extends React.Component {
         <div className={layoutStyles.container}>
           <div className={layoutStyles.content}>
             <Header
+              title={this.props.title}
               handleThemeSwitching={this.handleThemeSwitching}
               isLight={this.state.theme}
             />

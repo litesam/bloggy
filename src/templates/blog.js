@@ -17,7 +17,7 @@ query ($slug: String!) {
 `;
 
 const Blog = (props) => {
-  return (<Layout>
+  return (<Layout title={"Blog"}>
     <h1>{props.data.markdownRemark.frontmatter.title}</h1>
     <p>{props.data.markdownRemark.frontmatter.date} • {props.data.markdownRemark.timeToRead}</p>
     <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
