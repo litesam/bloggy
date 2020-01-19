@@ -1,16 +1,5 @@
 // 
-// TODO: Update window.localStorage in constructor so that gatsby build will be successful
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
-// 
+// TODO: Need to update the Layout component to make the transitions and everything smooth and fast.
 // 
 // 
 // 

@@ -7,7 +7,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Portfolio',
-    author: 'Sam Light 😃'
+    author: 'Sam Light 😃',
+    pageTitle: 'Bloggy - A Portfolio and Blog combined together'
   },
   plugins: [{
     resolve: 'gatsby-plugin-styled-components'

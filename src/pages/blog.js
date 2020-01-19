@@ -1,21 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
 import Layout from '../components/layout';
+import Head from '../components/head';
+import reformatTimeToRead from '../styles/reformatTimeToRead';
 import blogStyles from './blog.module.css';
 
 const BlogPage = () => {
-
-  // const [isLight, setLight] = useState(window.localStorage.getItem('theme'));
-
-  // useEffect(() => {
-  //   if (isLight === 'light') {
-  //     setLight('dark');
-  //   } else {
-  //     setLight('light')
-  //   }
-  // }, [window.localStorage.getItem('theme')]);
-  // console.log(isLight);
 
   const data = useStaticQuery(graphql`
     query {
@@ -38,13 +29,14 @@ const BlogPage = () => {
 
   return (
     <Layout>
+      <Head pageTitle="The Blog" />
       <h1>Blog</h1>
       <p>Posts will show up here.</p>
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges.map(post => <li key={post.node.fields.slug} className={blogStyles.post}>
           <Link to={`/blog/${post.node.fields.slug}`}>
             <h3>{post.node.frontmatter.title}</h3>
-            <p>{post.node.frontmatter.date} • {post.node.timeToRead}</p>
+            <p>{post.node.frontmatter.date} • {reformatTimeToRead(post.node.timeToRead)}</p>
           </Link>
         </li>)}
       </ol>
