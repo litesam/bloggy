@@ -1,3 +1,20 @@
+// 
+// TODO: Update window.localStorage in constructor so that gatsby build will be successful
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+
 import React from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 
@@ -26,8 +43,14 @@ class Layout extends React.Component {
     super(props);
     this.handleThemeSwitching = this.handleThemeSwitching.bind(this);
     this.state = {
-      theme: !window.localStorage.getItem('theme') ? 'light' : window.localStorage.getItem('theme')
+      theme: 'light'    
     };
+  }
+
+  componentDidMount() {
+    if (!window.localStorage.getItem('theme')) {
+      window.localStorage.setItem('theme', this.state.theme);
+    }
   }
 
   handleThemeSwitching() {
