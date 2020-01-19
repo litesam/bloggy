@@ -49,12 +49,6 @@ class Layout extends React.Component {
 
   componentDidMount() {
     console.log(window.localStorage.getItem('theme')); 
-    if (window.localStorage.getItem('theme')) {
-       this.setState({ theme: window.localStorage.getItem('theme') });
-    } else {
-       window.localStorage.setItem('theme', this.state.theme);
-    }
-
   }
 
   handleThemeSwitching() {
