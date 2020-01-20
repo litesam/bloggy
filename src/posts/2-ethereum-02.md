@@ -1,6 +1,6 @@
 ---
 title: "Part II - of How to create a simple Decentralized Application using Ethereum Blockchain?"
-date: "2019-04-01"
+date: "Haha Nope there is nothing here"
 ---
 
 Continuation of my article about Building a DApp.

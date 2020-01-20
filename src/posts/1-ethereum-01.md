@@ -1,6 +1,6 @@
 ---
 title: "Part I - of How to create a simple Decentralized Application using Ethereum Blockchain?"
-date: "2019-04-01"
+date: "January, 4 2019"
 ---
 
 A simple Application that depicts how the blockchain works!
