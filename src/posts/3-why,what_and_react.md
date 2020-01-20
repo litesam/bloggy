@@ -30,6 +30,6 @@ To who this blog is for all who is really interested in learning about new techn
 
 ## Why no graphics on the webpages?
 
-This is a simple one I'm trying to do animations based upon Spring-physics based animations rather than traditional time-based animations. I tried to build the Spring-physics animations from scratch but it takes a lot of time because it is just me madly typing on my keyboard hoping that the animation will be rendered in 60fps but no it takes a huge lag and lays down to 10fps so that it cannot render more than even 10 elements, so wait till the animation thingie grows or wait till I get frustrated and use any other spring graphics library.
+This is a simple one I'm trying to do animations based upon Spring-physics rather than traditional time-based animations. I'm trying to build my own Spring-physics animations from scratch but it takes a lot of time because, it is just me madly typing on my keyboard hoping that the animation will be rendered in 60fps but no it takes a huge lag and lays down to 10fps so that it cannot render more than even 10 elements, so wait till I learn to do it correctly or wait till I get frustrated and use any other spring graphics library.
 
 Now go ahead and try to build a blog on your own, and do share it with me!!
