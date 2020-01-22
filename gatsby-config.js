@@ -20,10 +20,6 @@ module.exports = {
     }
   },
   'gatsby-transformer-remark',
-  'gatsby-plugin-react-helmet', {
-    resolve: 'gatsby-remark-prismjs'
-    // options: {
-    //   inlineCodeMarker: 
-    // }
-  }]
+  'gatsby-plugin-react-helmet'
+  ]
 }

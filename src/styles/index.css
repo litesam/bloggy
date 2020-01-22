@@ -93,13 +93,11 @@ img {
 svg:not(:root) {
   overflow: hidden;
 }
-code,
-kbd,
-pre,
-samp {
+
+/* samp {
   font-family: monospace, monospace;
   font-size: 1em;
-}
+} */
 figure {
   margin: 1em 40px;
 }
@@ -399,7 +397,7 @@ figure {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-pre {
+/* pre {
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -411,7 +409,7 @@ pre {
   overflow: auto;
   word-wrap: normal;
   padding: 1.45rem;
-}
+} */
 table {
   margin-left: 0;
   margin-right: 0;
@@ -542,18 +540,18 @@ p *:last-child {
 li > p {
   margin-bottom: calc(1.45rem / 2);
 }
-code {
+/* code {
   font-size: 0.85rem;
   line-height: 1.45rem;
-}
+} */
 kbd {
   font-size: 0.85rem;
   line-height: 1.45rem;
 }
-samp {
+/* samp {
   font-size: 0.85rem;
   line-height: 1.45rem;
-}
+} */
 abbr {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
@@ -591,8 +589,8 @@ th:last-child,
 td:last-child {
   padding-right: 0;
 }
-tt,
-code {
+/* tt, */
+/* code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
   font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
@@ -600,24 +598,24 @@ code {
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
-}
-pre code {
+} */
+/* pre code {
   background: none;
   line-height: 1.42;
-}
-code:before,
+} */
+/* code:before,
 code:after,
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
   content: " ";
-}
-pre code:before,
+} */
+/* pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
-}
+} */
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
