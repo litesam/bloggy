@@ -3,7 +3,7 @@ const syntaxTomorrow = `
 
 code,
 pre {
-	color: #ccc;
+	color: rgb(210, 192, 173);
 	background: none;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
@@ -121,7 +121,7 @@ pre {
 const syntaxSolarized = `
 code,
 pre {
-	color: #657b83; /* base00 */
+	color: rgb(124, 55, 173); /* base00 */
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
 	text-align: left;
@@ -235,4 +235,4 @@ pre {
 }
 `;
 
-export default syntaxSolarized;
+export default syntaxTomorrow;

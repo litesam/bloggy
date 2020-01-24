@@ -1,6 +1,6 @@
 ---
 title: "Why Bloggy, and why React?"
-date: "January 1, 2020"
+date: "January 20, 2020"
 ---
 
 
