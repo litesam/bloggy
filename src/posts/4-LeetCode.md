@@ -22,7 +22,7 @@ Consider the string `retweet` now if we start from each character and check for 
 r e t w e e t
 r, re, ret, retw, retwe, retwee, retweet
 ```
-Well none of the above are palindromes, except for `r` which is the max palindrome here so we have to start from the values again and again for all the characters in here `retweet` are done to get the largest Palindrome, so according to the LeetCode the ***ee*** is the largest Palindrome in the string retweet, so we may have other possible way to solve this but I'm going to solve this using normal Brute Force way rather than Dynammic Programming's **Top Down** or **Bottom Up** approach to solve this problem.
+Well none of the above are palindromes, except for `r` which is the max palindrome here so we have to start from the values again and again for all the characters in here `retweet` are done to get the largest Palindrome, so according to the LeetCode the `ee` is the largest Palindrome in the string retweet, so we may have other possible way to solve this but I'm going to solve this using normal Brute Force way rather than Dynammic Programming's **Top Down** or **Bottom Up** approach to solve this problem.
 
 Based on the speculation I should've stopped here, closed my laptop and should've slept throught the night instead I wrote a O(n ^ 3) algorithm, which is:
 

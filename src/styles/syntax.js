@@ -5,6 +5,7 @@ code,
 pre {
 	color: rgb(210, 192, 173);
 	background: none;
+	background-color: black;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	text-align: left;
 	white-space: pre;
@@ -12,6 +13,7 @@ pre {
 	word-break: normal;
 	word-wrap: normal;
 	line-height: 1.5;
+	word-spacing: 0.1em;
 
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -22,6 +24,10 @@ pre {
 	-ms-hyphens: none;
 	hyphens: none;
 
+}
+
+pre code {
+	background: none;
 }
 
 /* Code blocks */
