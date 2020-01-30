@@ -6,6 +6,9 @@ import { ThemeContext } from 'styled-components';
 import headerStyles from './header.module.css';
 import './toggle.css';
 
+import moon from '../assets/moon.png';
+import sun from '../assets/sun.png';
+
 const Header = ({ handleThemeSwitching, isLight, title }) => {
 
   const themeContext = useContext(ThemeContext);
@@ -56,6 +59,27 @@ const Header = ({ handleThemeSwitching, isLight, title }) => {
         <div>
           <Toggle
             defaultChecked={isLight === 'light'}
+            icons={{
+              checked: (
+                <img
+                  src={sun}
+                  width="16"
+                  height="16"
+                  role="presentation"
+                  style={{ pointerEvents: 'none' }}
+                />
+              ),
+              unchecked: (
+                <img
+                  src={moon}
+                  width="16"
+                  height="16"
+                  role="presentation"
+                  style={{ pointerEvents: 'none' }}
+                />
+              )
+            }}
+            checked={isLight === 'light'}
             aria-label="Theme switcher"
             onChange={handleThemeSwitching}
           />
