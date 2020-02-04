@@ -32,7 +32,7 @@ pre code {
 
 /* Code blocks */
 pre {
-	padding: 1em;
+	padding: .51em;
 	margin: .5em 0;
 	overflow: auto;
 }

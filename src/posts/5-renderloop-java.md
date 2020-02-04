@@ -1,13 +1,13 @@
 ---
 title: "How to create a render loop in Java"
-date: "February, 3 2020"
+date: "February, 4 2020"
 ---
 
-Yeah this is only for Game development, and if you are a person who might use OpenCV extensively you can view this!
+Yeah, this is only for Game development, and if you are a person who might use OpenCV extensively you can view this!
 
 ## What Render? Loop?
 
-This is conversation is totally gonna be for the programmer in you who is screaming to you as LET US TO CREATE GAMES this will be fuel thrilled for them, 'cos the stuff that I'll be doing here is so esoteric, so come fall in love with Game Development.
+This is the conversation that is totally gonna be for the programmer in you who is screaming to you as LET US TO CREATE GAMES this will be fuel thrilled for them, 'cos the stuff that I'll be doing here is so esoteric, so come fall in love with Game Development.
 
 **Render Loop** if you want the definition of it go to Google and search yourself.
 
@@ -26,7 +26,7 @@ import java.awt.Canvas;
 import javax.swing.JFrame;
 ```
 
-Now this will always gonna be a boilerplate, and the boilerplate is going to be hard to understand.
+Now this will always gonna be boilerplate, and the boilerplate is going to be hard to understand.
 So we will go everything step by step.
 
 ```java
@@ -86,11 +86,15 @@ Let us go into a deep-dive into what each and every single variables is contribu
 
 `delta` is the only thing that will be helping us in giving a calculation on whether the update should be run or not.
 
-`frames` will be going to help us in indentifying on how many times the frames should be running on a single second.
+`frames` will be going to help us in identifying how many times the frames should be running on a single second.
 
 `updates` is going to help us in running the update loop in sync for 60 times in a second.
 
-Now for the `if` block that has the `System.currentTimeMillis() - timer > 1000` condition it is used to reset the variable of the updates and frames for each and every single second so that it can b used to calculate the whole process again.
+Now for the `if` block that has the 
+```java
+System.currentTimeMillis() - timer > 1000
+```
+condition it is used to reset the variable of the updates and frames for each and every single second so that it can b used to calculate the whole process again.
 
 ## For the final render loop and update loop!
 
@@ -132,6 +136,6 @@ public static void main(String[] args) {
 
 ## Part II?
 
-Yeah I will be writing a dedicated Part II for rendering something to the `render()` function on the Part II.
+Yeah, I will be writing a dedicated Part II for rendering something to the `render()` function on Part II.
 
 P.S. If you made it here, you've finished completing your render loop aka the topic.
