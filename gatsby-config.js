@@ -18,8 +18,20 @@ module.exports = {
       name: 'src',
       path: `${__dirname}/src/`
     }
+  }, {
+    resolve: 'gatsby-transformer-remark',
+    options: {
+      plugins: [
+        {
+          resolve: 'gatsby-remark-prismjs',
+          options: {
+            classPrefix: 'language-',
+            inlineCodeMarker: null
+          }
+        }
+      ]
+    }
   },
-  'gatsby-transformer-remark',
-  'gatsby-plugin-react-helmet'
+  'gatsby-plugin-react-helmet',
   ]
 }

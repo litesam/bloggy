@@ -5,3 +5,5 @@ export function replaceComponentRenderer({ props, loader }) {
     ...props,
   });
 }
+
+require('prismjs/themes/prism-tomorrow.css');
