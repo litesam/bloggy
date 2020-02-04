@@ -1,5 +1,5 @@
 ---
-title: "How to create a render loop in Java"
+title: "How to create a Game render loop in Java"
 date: "February, 4 2020"
 ---
 
