@@ -1,6 +1,6 @@
 ---
-title: "Fast IO Java for Competitive Programming!"
-date: "January 28, 2020"
+title: "Fast IO in Java for Competitive Programming!"
+date: "February 5, 2020"
 ---
 
 ## Fast IO?
@@ -95,4 +95,4 @@ class Solution {
 }
 ```
 
-**P.S.** Sorry for not having any benchmarking over this, but this was something that I found later on by solving many Competitive programming problems thinking and obsessing that my brute force solution was problem(which probably would've been) but on the bright side, it does had a certain ring over time complexity issues, if you looked at the code you can still find that it is just a fancy way of writing `BufferedReader`.
+**P.S.** Sorry for not having any benchmarking results over this, but this was something that I found later on by solving many Competitive programming problems thinking and obsessing that my brute force solution was problem(which probably would've been) but on the bright side, it does had a certain ring over time complexity issues, if you looked at the code you can still find that it is just a fancy way of writing `BufferedReader`.
