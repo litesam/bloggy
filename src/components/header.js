@@ -58,7 +58,7 @@ const Header = ({ handleThemeSwitching, isLight, title }) => {
         </ul>
         <div>
           <Toggle
-            defaultChecked={isLight === 'light'}
+            // defaultChecked={isLight === 'light'}
             icons={{
               checked: (
                 <img
