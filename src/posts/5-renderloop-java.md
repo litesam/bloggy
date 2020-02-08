@@ -35,6 +35,7 @@ public class Game extends Canvas implements Runnable {
   public final static long serialVersionUID = 1L; // Another boilerplate because of Canvas(class)
 
   public JFrame frame;
+  public Thread thread;
 
   public Game() {
     frame = new JFrame();
@@ -130,7 +131,22 @@ public static void main(String[] args) {
   game.frame.setLocationRelativeTo(null); // you can understand by its name itself
   game.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-  game.start();
+  game.start(); // Function that we will writing soon.
+}
+```
+
+Yeah I forgot the `Thread`, which will execute our `run()` function, here it is:
+
+```java
+public class Game{
+  ...
+
+  public void start() {
+    thread = new Thread(this, "Screen");
+    thread.start();
+  }
+
+  ...
 }
 ```
 
