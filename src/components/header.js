@@ -30,7 +30,8 @@ const Header = ({ handleThemeSwitching, isLight, title }) => {
                 color: (isLight === 'light') ? 'black' : 'rgb(253, 253, 253)'
               }}
               to="/"
-            >Home</Link></li>
+            >Home</Link>
+          </li>
           <li>
             <Link 
               className={headerStyles.navItem} 
@@ -38,7 +39,8 @@ const Header = ({ handleThemeSwitching, isLight, title }) => {
                 color: (isLight === 'light') ? 'black' : 'rgb(253, 253, 253)'
               }}
               to="/blog"
-            >Blog</Link></li>
+            >Blog</Link>
+          </li>
           <li>
             <Link 
               className={headerStyles.navItem} 
@@ -46,7 +48,8 @@ const Header = ({ handleThemeSwitching, isLight, title }) => {
                 color: (isLight === 'light') ? 'black' : 'rgb(253, 253, 253)'
               }}
               to="/about"
-            >About</Link></li>
+            >About</Link>
+          </li>
           <li>
             <Link 
               className={headerStyles.navItem} 
@@ -54,7 +57,8 @@ const Header = ({ handleThemeSwitching, isLight, title }) => {
                 color: (isLight === 'light') ? 'black' : 'rgb(253, 253, 253)'
               }}
               to="/contact"
-            >Contact</Link></li>
+            >Contact</Link>
+          </li>
         </ul>
         <div>
           <Toggle
@@ -62,6 +66,7 @@ const Header = ({ handleThemeSwitching, isLight, title }) => {
             icons={{
               checked: (
                 <img
+                  alt="Light Icon"
                   src={sun}
                   width="16"
                   height="16"
@@ -71,6 +76,7 @@ const Header = ({ handleThemeSwitching, isLight, title }) => {
               ),
               unchecked: (
                 <img
+                  alt="Dark Icon"
                   src={moon}
                   width="16"
                   height="16"

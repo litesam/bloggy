@@ -6,4 +6,4 @@ export function replaceComponentRenderer({ props, loader }) {
   });
 }
 
-require('prismjs/themes/prism-tomorrow.css');
+require('./src/utils/prism-dracul.css');

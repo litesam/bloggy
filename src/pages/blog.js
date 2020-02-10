@@ -31,7 +31,6 @@ const BlogPage = () => {
     <Layout>
       <Head pageTitle="The Blog" />
       <h1>Blog</h1>
-      <p>Posts will show up here.</p>
       <ol className={blogStyles.posts}>
         {data.allMarkdownRemark.edges.map(post => <li key={post.node.fields.slug} className={blogStyles.post}>
           <Link to={`/blog/${post.node.fields.slug}`}>

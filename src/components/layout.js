@@ -1,5 +1,5 @@
 // 
-// TODO: Need to update the Layout component to make the transitions and everything smooth and fast.
+// TODO: Flickering on the Toggle and flickering on the page on initial load.
 // 
 // 
 // 
@@ -37,13 +37,15 @@ class Layout extends React.Component {
   }
 
   componentDidMount() {
-    console.log(window.localStorage.getItem('theme')); 
     if (window.localStorage.getItem('theme')) {
        this.setState({ theme: window.localStorage.getItem('theme') });
     } else {
        window.localStorage.setItem('theme', this.state.theme);
     }
+  }
 
+  componentDidUpdate() {
+    window.localStorage.setItem('theme', this.state.theme);
   }
 
   handleThemeSwitching() {
@@ -52,10 +54,6 @@ class Layout extends React.Component {
     } else {
       this.setState({ theme: 'light' });
     }
-    window.localStorage.setItem('theme', this.state.theme);
-  }
-
-  componentDidUpdate() {
     window.localStorage.setItem('theme', this.state.theme);
   }
   

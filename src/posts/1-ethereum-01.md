@@ -29,21 +29,15 @@ contract Inbox {
 
 If you came from languages like Javascript, Java, Ruby, Python, C#, and C++ this might look familiar. However we will go through this line by line.
 
-`
-pragma solidity ^0.4.17
-`
+`pragma solidity ^0.4.17`
 
 This specifies the required compiler the solidity should use when this source code must be executed.
 
-`
-contract
-`
+`contract`
 This is like a class in Java, ruby, etc.,
 
 We have a local variable declared inside our contract called as:
-`
-string public message;
-`
+`string public message;`
 Which is used to store the recent message.
 
 ```solidity
@@ -87,9 +81,7 @@ A final image to finish this, on how to see the output:
 ![alt text](https://t59suw.bn.files.1drv.com/y4mqFyhgibKuW4f1T0c19Frngr_gkK2GccWObpN8Mqg4FriPJzFP4L4_EqcE-zGoI6p0Vo3E6Irx-UBEk9MB3MItTMZ1q08QTeHaFYXX4nGGr8ypl6hftlWq5VPhYc_ipjM4-3mVl-m6j6o8giq8xKEehy67GLbnCw0UDFbuvdyl2wBkQ9SLnIQrCWT8Zv0L9Sv3wVJXlnAodKEdJyBhu1thQ?width=1920&height=1003&cropmode=none)
 
 After you deploy the contract you can get a clickable
-`
-setMessage
-`
+`setMessage`
 
 Add your required text in a **double quotes**.
 

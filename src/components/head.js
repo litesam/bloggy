@@ -14,9 +14,7 @@ const Head = ({ pageTitle }) => {
     }
   `);
   
-  return (
-    <Helmet title={`${pageTitle} | ${data.site.siteMetadata.pageTitle}`} />
-  );
+  return <Helmet title={`${pageTitle} | ${data.site.siteMetadata.pageTitle}`} />;
 }
 
 export default Head;

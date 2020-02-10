@@ -5,7 +5,6 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Head from '../components/head';
 import reformatTimeToRead from '../styles/reformatTimeToRead';
-// import syntax from '../styles/syntax';
 
 export const query = graphql`
 query ($slug: String!) {
@@ -26,9 +25,7 @@ const Blog = (props) => {
     <Head pageTitle={props.data.markdownRemark.frontmatter.title} />
     <h1>{props.data.markdownRemark.frontmatter.title}</h1>
     <p>{props.data.markdownRemark.frontmatter.date} • {reformatTimeToRead(props.data.markdownRemark.timeToRead)}</p>
-    {/* <div css={syntax}> */}
-      <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
-    {/* </div> */}
+    <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
   </Layout>);
 }
 
