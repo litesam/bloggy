@@ -32,7 +32,7 @@ class Layout extends React.Component {
     super(props);
     this.handleThemeSwitching = this.handleThemeSwitching.bind(this);
     this.state = {
-      theme: 'light'    
+      theme: 'dark'    // default to dark mode
     };
   }
 
